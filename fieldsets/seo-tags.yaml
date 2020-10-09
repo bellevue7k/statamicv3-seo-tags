@@ -1,0 +1,30 @@
+title: SEO
+fields:
+  -
+    handle: seo-title
+    field:
+      input_type: text
+      display: SEO-Titel
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: seo-description
+    field:
+      character_limit: '160'
+      display: SEO-Beschreibung
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: seo-image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: SEO-Bild
+      type: assets
+      icon: assets
+      instructions: 'Bild, welches angezeigt wird, wenn diese Seite geteilt wird.'
+      listable: hidden
