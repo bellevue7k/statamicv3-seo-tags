@@ -4,4 +4,4 @@
 <meta property="og:url" content="{{ permalink }}">
 {{ if seo-image }}{{ glide:seo-image width="1200" absolute="true" }}<meta property="og:image" content="{{ url }}">{{ /glide:seo-image }}{{ /if }}
 {{ if seo-description}}<meta name="description" content="{{ seo-description }}">{{ /if }}
-<title>{{ seo-title ?? title }}</title>
+<title>{{ if seo-title }}{{ seo-title }}{{ else }}{{ title }} | {{ config:app:name }}{{ /if }}</title>
