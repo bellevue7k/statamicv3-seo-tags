@@ -2,6 +2,6 @@
 {{ if seo-description }}<meta property="og:description" content="{{ seo-description }}">{{ /if }}
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ permalink }}">
-{{ if seo-image }}{{ glide:seo-image width="1200" absolute="true" }}<meta property="og:image" content="{{ url }}">{{ /glide:seo-image }}{{ /if }}
+{{ if seo-image }}{{ glide:seo-image width="1200" height="630" absolute="true" }}<meta property="og:image" content="{{ url }}">{{ /glide:seo-image }}<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{{ /if }}
 {{ if seo-description}}<meta name="description" content="{{ seo-description }}">{{ /if }}
 <title>{{ if seo-title }}{{ seo-title }}{{ else }}{{ title }} | {{ config:app:name }}{{ /if }}</title>
