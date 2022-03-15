@@ -1,7 +1,7 @@
 title: SEO
 fields:
   -
-    handle: seo-title
+    handle: seo_title
     field:
       input_type: text
       display: SEO-Titel
@@ -9,7 +9,7 @@ fields:
       icon: text
       listable: hidden
   -
-    handle: seo-description
+    handle: seo_description
     field:
       character_limit: '160'
       display: SEO-Beschreibung
@@ -17,7 +17,7 @@ fields:
       icon: textarea
       listable: hidden
   -
-    handle: seo-image
+    handle: seo_image
     field:
       mode: grid
       restrict: false
