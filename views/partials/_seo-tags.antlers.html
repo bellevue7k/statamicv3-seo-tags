@@ -4,4 +4,4 @@
 <meta property="og:url" content="{{ permalink }}">
 {{ if seo_image }}{{ glide:seo_image width="1200" height="630" absolute="true" }}<meta property="og:image" content="{{ url }}"><meta property="og:image:width" content="{{ width }}"><meta property="og:image:height" content="{{ height }}">{{ /glide:seo_image }}{{ /if }}
 {{ if seo_description}}<meta name="description" content="{{ seo_description }}">{{ /if }}
-<title>{{ if seo_title }}{{ seo_title }}{{ elseif 404 }}Seite nicht gefunden | {{ config:app:name }}{{ else }}{{ title|strip_tags }} | {{ config:app:name }}{{ /if }}</title>
+<title>{{ if seo_title }}{{ seo_title }}{{ elseif !is_entry }}Seite nicht gefunden | {{ config:app:name }}{{ else }}{{ title|strip_tags }} | {{ config:app:name }}{{ /if }}</title>
